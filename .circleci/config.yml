@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: system
-          command: sudo corepack enable
+          command: sudo npm install -g pnpm
       - restore_cache:
           keys:
             - v1-pnpm-{{ checksum "pnpm-lock.yaml" }}

@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: system
-          command: sudo npm install -g pnpm
+          command: sudo npm install -g pnpm@9.15.4
       - restore_cache:
           keys:
             - v1-pnpm-{{ checksum "pnpm-lock.yaml" }}
